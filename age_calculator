@@ -2,20 +2,15 @@
 
 def calculate_age():
     try:
-        # Prompt the user to enter their birth year
         birth_year = int(input("Enter your birth year: "))
-        
-        # Calculate the age
         current_year = 2024  
         age = current_year - birth_year
         
-        print("Your age is:", age)
+        print("Your age is: ", age)
     
     except ValueError:
         print("Please enter a valid year as a number.")
 
-
-# Main function to test the age calculator
 if __name__ == "__main__":
     calculate_age()
 
