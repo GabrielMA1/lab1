@@ -1,15 +1,21 @@
-def helloWorld():
-	print(‘Hello World’)
-
-
-helloWorld()
-
+# age_calculator.py
 
 def calculate_age():
-    year_of_birth = int(input("Enter your year of birth: "))
-    current_year = 2024  
-    age = current_year - year_of_birth
+    try:
+        # Prompt the user to enter their birth year
+        birth_year = int(input("Enter your birth year: "))
+        
+        # Calculate the age
+        current_year = 2024  
+        age = current_year - birth_year
+        
+        print("Your age is:", age)
+    
+    except ValueError:
+        print("Please enter a valid year as a number.")
 
-    print("Your age is:", age)
 
-calculate_age()
+# Main function to test the age calculator
+if __name__ == "__main__":
+    calculate_age()
+
